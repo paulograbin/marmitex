@@ -9,7 +9,6 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 export class AppComponent {
 
   title = 'marmita'
-  errorMessage = ''
 
   defaultValue = 1750
   numbersAfterComma = 0;
@@ -32,15 +31,27 @@ export class AppComponent {
     });
 
     this.calculateMealSize(this.defaultValue);
+
+    this.form.controls['quantidade'].valueChanges.subscribe(change => {
+      this.calculateMealSize(change)
+    })
   }
 
   onChange() {
-    let quantidadeInput = this.form.get('quantidade');
+    console.log('onChannge!')
+
+    let quantidadeInput = this.form.get('quantidade')
     let quantity = quantidadeInput?.value
     this.calculateMealSize(quantity);
   }
 
   private calculateMealSize(quantity: number) {
+    console.log('calculating meal size for ', quantity)
+
+    if (quantity === 0) {
+      return
+    }
+
     this.cinco = this.calculatePortionSize(quantity, 5)
     this.seis = this.calculatePortionSize(quantity, 6)
     this.sete = this.calculatePortionSize(quantity, 7)
