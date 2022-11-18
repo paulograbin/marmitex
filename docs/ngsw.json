@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1668809649650,
+  "timestamp": 1668810139992,
   "index": "/marmitex/index.html",
   "assetGroups": [
     {
@@ -54,7 +54,7 @@
     "/marmitex/assets/icons/marmita-96.png": "7c30faca0539f5b2db8b1458108dc022ae661302",
     "/marmitex/assets/icons/marmita-original.png": "4b9a63e0ba24382405f2079c5b199caa02edf49f",
     "/marmitex/favicon.ico": "97d61acab6fcc6163147b12f4f6eea9707d3cfe3",
-    "/marmitex/index.html": "0158b0a79c3c9c3448c9c43c42af84f232aef019",
+    "/marmitex/index.html": "f8a6dc878468d342b80fb82f44d3485cc2fc8d3c",
     "/marmitex/main.044d77b04d8ef054c408.js": "2b3053cf917f803cd8a0d89abdbb2a0db61214b5",
     "/marmitex/manifest.webmanifest": "6072b7ffa9adf65db204f623866284880dd6a707",
     "/marmitex/polyfills.3abcf39dc421d0a920dd.js": "d78aa158af5d4a3ef1baae3a896becd311a32e6f",
