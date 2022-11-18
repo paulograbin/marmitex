@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1668810139992,
+  "timestamp": 1668812184968,
   "index": "/marmitex/index.html",
   "assetGroups": [
     {
@@ -29,6 +29,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/marmitex/apple-touch-icon.png",
         "/marmitex/assets/icons/marmita-128.png",
         "/marmitex/assets/icons/marmita-144.png",
         "/marmitex/assets/icons/marmita-152.png",
@@ -44,6 +45,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/marmitex/apple-touch-icon.png": "97d61acab6fcc6163147b12f4f6eea9707d3cfe3",
     "/marmitex/assets/icons/marmita-128.png": "f6aedeb899839b444a01fc9b9ee0308bb34d1473",
     "/marmitex/assets/icons/marmita-144.png": "3a204034346159af1c300e038d4cb7a5002b5cfe",
     "/marmitex/assets/icons/marmita-152.png": "08735d1fdab6e3dbe260db7ed70aa42d0d69db36",
