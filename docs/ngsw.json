@@ -1,0 +1,99 @@
+{
+  "configVersion": 1,
+  "timestamp": 1668802895104,
+  "index": "/marmitex/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/marmitex/favicon.ico",
+        "/marmitex/index.html",
+        "/marmitex/main.0c9c5f8afdf518a1c125.js",
+        "/marmitex/manifest.webmanifest",
+        "/marmitex/polyfills.3abcf39dc421d0a920dd.js",
+        "/marmitex/runtime.b0388638cf277934af6b.js",
+        "/marmitex/styles.31d6cfe0d16ae931b73c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/marmitex/assets/icons/icon-128x128.png",
+        "/marmitex/assets/icons/icon-144x144.png",
+        "/marmitex/assets/icons/icon-152x152.png",
+        "/marmitex/assets/icons/icon-192x192.png",
+        "/marmitex/assets/icons/icon-384x384.png",
+        "/marmitex/assets/icons/icon-512x512.png",
+        "/marmitex/assets/icons/icon-72x72.png",
+        "/marmitex/assets/icons/icon-96x96.png",
+        "/marmitex/assets/icons/marmita-128.png",
+        "/marmitex/assets/icons/marmita-144.png",
+        "/marmitex/assets/icons/marmita-152.png",
+        "/marmitex/assets/icons/marmita-192.png",
+        "/marmitex/assets/icons/marmita-384.png",
+        "/marmitex/assets/icons/marmita-512.png",
+        "/marmitex/assets/icons/marmita-72.png",
+        "/marmitex/assets/icons/marmita-96.png",
+        "/marmitex/assets/icons/marmita-original.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/marmitex/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/marmitex/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/marmitex/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/marmitex/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/marmitex/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/marmitex/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/marmitex/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/marmitex/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/marmitex/assets/icons/marmita-128.png": "f6aedeb899839b444a01fc9b9ee0308bb34d1473",
+    "/marmitex/assets/icons/marmita-144.png": "3a204034346159af1c300e038d4cb7a5002b5cfe",
+    "/marmitex/assets/icons/marmita-152.png": "08735d1fdab6e3dbe260db7ed70aa42d0d69db36",
+    "/marmitex/assets/icons/marmita-192.png": "02b504b2fd05a22635a52ace5f69353cff5d6629",
+    "/marmitex/assets/icons/marmita-384.png": "55be21f319bbc8d2f4e5a71d1ba2184f4150d0dd",
+    "/marmitex/assets/icons/marmita-512.png": "6dcbe2ab8165c00b8b6b1fab6709123241ee50f1",
+    "/marmitex/assets/icons/marmita-72.png": "a8db91b7cc3631219436092577885df5c98c6928",
+    "/marmitex/assets/icons/marmita-96.png": "7c30faca0539f5b2db8b1458108dc022ae661302",
+    "/marmitex/assets/icons/marmita-original.png": "4b9a63e0ba24382405f2079c5b199caa02edf49f",
+    "/marmitex/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/marmitex/index.html": "55f51601777c0bd68748abe60829a9283165777d",
+    "/marmitex/main.0c9c5f8afdf518a1c125.js": "df314bef8959d17865923a20acc64a0c6fee6843",
+    "/marmitex/manifest.webmanifest": "74fd61c7c4fd28a17ae97d95d4a7f96f4993b9c5",
+    "/marmitex/polyfills.3abcf39dc421d0a920dd.js": "d78aa158af5d4a3ef1baae3a896becd311a32e6f",
+    "/marmitex/runtime.b0388638cf277934af6b.js": "7c3128b4a420bf342a0e0e31bc4f04090f65b138",
+    "/marmitex/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
