@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {UntypedFormBuilder, UntypedFormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -18,9 +18,9 @@ export class AppComponent {
 
   private numbersAfterComma = 0;
 
-  form: FormGroup
+  form: UntypedFormGroup
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.form = this.formBuilder.group({
       quantidade: [this.defaultValue, [Validators.required, Validators.min(0)]]
     });
