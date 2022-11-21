@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1669038569335,
+  "timestamp": 1669067142765,
   "index": "/marmitex/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/marmitex/favicon.ico",
         "/marmitex/index.html",
-        "/marmitex/main.0eeae598a71b5bc78674.js",
+        "/marmitex/main.067ab0930eb00b49.js",
         "/marmitex/manifest.webmanifest",
-        "/marmitex/polyfills.3abcf39dc421d0a920dd.js",
-        "/marmitex/runtime.b0388638cf277934af6b.js",
-        "/marmitex/styles.31d6cfe0d16ae931b73c.css"
+        "/marmitex/polyfills.d6e1c9ee21eac75b.js",
+        "/marmitex/runtime.ef9939783d4039ea.js",
+        "/marmitex/styles.ef46db3751d8e999.css"
       ],
       "patterns": []
     },
@@ -56,12 +56,12 @@
     "/marmitex/assets/icons/marmita-96.png": "7c30faca0539f5b2db8b1458108dc022ae661302",
     "/marmitex/assets/icons/marmita-original.png": "4b9a63e0ba24382405f2079c5b199caa02edf49f",
     "/marmitex/favicon.ico": "97d61acab6fcc6163147b12f4f6eea9707d3cfe3",
-    "/marmitex/index.html": "7a64a481ddf0a7c79f43d22dd1cba76053f6b418",
-    "/marmitex/main.0eeae598a71b5bc78674.js": "982d0dcbf6a3aad9064b49454f5c12e71a6f0bf7",
-    "/marmitex/manifest.webmanifest": "74fd61c7c4fd28a17ae97d95d4a7f96f4993b9c5",
-    "/marmitex/polyfills.3abcf39dc421d0a920dd.js": "d78aa158af5d4a3ef1baae3a896becd311a32e6f",
-    "/marmitex/runtime.b0388638cf277934af6b.js": "7c3128b4a420bf342a0e0e31bc4f04090f65b138",
-    "/marmitex/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/marmitex/index.html": "a225dd8b48882284d516465f6156c3f6b5351440",
+    "/marmitex/main.067ab0930eb00b49.js": "d96728d14117909cc4c2e9430d1c389dbff5b304",
+    "/marmitex/manifest.webmanifest": "6072b7ffa9adf65db204f623866284880dd6a707",
+    "/marmitex/polyfills.d6e1c9ee21eac75b.js": "db972ae59944ad7fbe037da8378a5c2a6a9a5d06",
+    "/marmitex/runtime.ef9939783d4039ea.js": "3298a0ba7cb3c89afd094d921569ce92453ad484",
+    "/marmitex/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
