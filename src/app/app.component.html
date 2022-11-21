@@ -1,24 +1,16 @@
 <div class="content">
+  <div class="toolbar" role="banner">
+    <span>Opa!</span>
+  </div>
 
-  <form [formGroup]="form" (change)="onChange()">
+  <form [formGroup]="form">
     <label for="quantityInput">Quantidade</label>
     <input id="quantityInput" type="number" formControlName="quantidade">
   </form>
 
-  <h3>5- {{cinco}}g</h3>
-  <h3>6- {{seis}}g</h3>
-  <h3>7- {{sete}}g</h3>
-  <h3>8- {{oito}}g</h3>
-  <h3>9- {{nove}}g</h3>
-  <h3>10- {{dez}}g</h3>
-  <h3>11- {{onze}}g</h3>
-  <h3>12- {{doze}}g</h3>
-  <h3>13- {{treze}}g</h3>
-</div>
-
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <span>Welcome</span>
+  <div *ngFor="let entry of mealQuantityMap | keyvalue">
+    <h3>{{entry.key}}- {{entry.value}}g</h3>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
