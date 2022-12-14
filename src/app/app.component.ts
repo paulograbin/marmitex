@@ -10,14 +10,13 @@ export class AppComponent {
 
   private readonly MAX_MEAL_QUANTITY = 20;
   private readonly MINIMUM_MEAL_QUANTITY = 5;
-
-  defaultValue = 1750
-  private minimumPerMeal = 150
-  private maximumPerMeal = 250
-  mealQuantityMap = new Map<number, string>()
-
+  private readonly minimumPerMeal = 150
+  private readonly maximumPerMeal = 250
   private numbersAfterComma = 0;
 
+  defaultValue = 1750
+  mealQuantityMap = new Map<number, string>()
+  invalidInput = false;
   form: UntypedFormGroup
 
   constructor(private formBuilder: UntypedFormBuilder) {
@@ -41,16 +40,23 @@ export class AppComponent {
     this.calculateMealSize(quantity)
   }
 
-
   private calculateMealSize(quantity: number) {
     console.log('calculating meal size for', quantity)
 
-    if (quantity === 0) {
+    this.mealQuantityMap.clear();
+
+    if (quantity === 0 || quantity == null) {
       return
     }
 
     for (let i = this.MINIMUM_MEAL_QUANTITY; i < this.MAX_MEAL_QUANTITY; i++) {
       this.calculatePortionSize(quantity, i)
+    }
+
+    if (this.mealQuantityMap.size === 0) {
+      this.invalidInput = true;
+    } else {
+      this.invalidInput = false;
     }
   }
 
