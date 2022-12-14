@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {UntypedFormBuilder, ReactiveFormsModule} from "@angular/forms";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {LogUpdateComponent} from "./log-update/log-update.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [UntypedFormBuilder],
+  providers: [UntypedFormBuilder, LogUpdateComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
