@@ -35,8 +35,8 @@ export class AppComponent {
   onChange() {
     console.log('onChannge!')
 
-    let quantidadeInput = this.form.get('quantidade')
-    let quantity = quantidadeInput?.value
+    const quantidadeInput = this.form.get('quantidade')
+    const quantity = quantidadeInput?.value
     this.calculateMealSize(quantity)
   }
 
@@ -61,7 +61,7 @@ export class AppComponent {
   }
 
   private calculatePortionSize(quantity: number, portionCount: number) {
-    let mealQuantity = quantity / portionCount
+    const mealQuantity = quantity / portionCount
 
     if (mealQuantity >= this.minimumPerMeal && mealQuantity <= this.maximumPerMeal) {
       console.log(`adding entry to map ${portionCount} with ${mealQuantity}g`)
