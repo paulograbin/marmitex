@@ -3,15 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {UntypedFormBuilder, ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule, UntypedFormBuilder } from "@angular/forms";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import {LogUpdateComponent} from "./log-update/log-update.component";
 import { StoreModule } from '@ngrx/store';
+import { counterReducer } from "./counter.reducer";
+import { MyCounterComponent } from "./my-counter/my-counter.component";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyCounterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,7 @@ import { StoreModule } from '@ngrx/store';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({count: counterReducer})
   ],
   providers: [UntypedFormBuilder, LogUpdateComponent],
   bootstrap: [AppComponent]
