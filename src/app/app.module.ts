@@ -10,14 +10,23 @@ import {LogUpdateComponent} from "./log-update/log-update.component";
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from "./counter.reducer";
 import { MyCounterComponent } from "./my-counter/my-counter.component";
+import {HttpClientModule} from "@angular/common/http";
+import {booksReducer} from "./state/books.reducer";
+import {collectionReducer} from "./state/collection.reducer";
+import {BookListComponent} from "./book-list/book-list.component";
+import {BookCollectionComponent} from "./book-collection/book-collection.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyCounterComponent
+    MyCounterComponent,
+    BookListComponent,
+    BookCollectionComponent
   ],
   imports: [
+    HttpClientModule,
+
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -27,7 +36,7 @@ import { MyCounterComponent } from "./my-counter/my-counter.component";
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    StoreModule.forRoot({count: counterReducer})
+    StoreModule.forRoot({count: counterReducer, books: booksReducer, collection: collectionReducer})
   ],
   providers: [UntypedFormBuilder, LogUpdateComponent],
   bootstrap: [AppComponent]
