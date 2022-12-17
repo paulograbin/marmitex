@@ -1,5 +1,9 @@
 import {Component} from '@angular/core';
 import {UntypedFormBuilder, UntypedFormGroup, Validators} from "@angular/forms";
+import {GoogleBooksService} from "./book-list/books.service";
+import {Store} from "@ngrx/store";
+import {BooksActions, BooksApiActions} from "./state/books.actions";
+import {selectBookCollection, selectBooks} from "./state/books.selectors";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +23,9 @@ export class AppComponent {
   invalidInput = false;
   form: UntypedFormGroup
 
-  constructor(private formBuilder: UntypedFormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder,
+              private bookService: GoogleBooksService,
+              private store: Store) {
     this.form = this.formBuilder.group({
       quantidade: [this.defaultValue, [Validators.required, Validators.min(0)]]
     });
@@ -31,6 +37,36 @@ export class AppComponent {
         this.calculateMealSize(change)
       })
   }
+
+
+
+
+
+  books$ = this.store.select(selectBooks);
+  bookCollection$ = this.store.select(selectBookCollection);
+
+  onAdd(bookId: string) {
+    this.store.dispatch(BooksActions.addBook({ bookId }));
+  }
+
+  onRemove(bookId: string) {
+    this.store.dispatch(BooksActions.removeBook({ bookId }));
+  }
+
+
+  ngOnInit() {
+    this.bookService
+      .getBooks()
+      .subscribe((books) => this.store.dispatch(BooksApiActions.retrievedBookList({books})))
+  }
+
+
+
+
+
+
+
+
 
   onChange() {
     console.log('onChannge!')
