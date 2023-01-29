@@ -136,3 +136,9 @@ footer a {
   background-color: rgb(77, 77, 239);
   margin-right: 20px;
 }
+
+.componentDiv {
+  border: 1px solid black;
+  margin: 20px;
+}
+

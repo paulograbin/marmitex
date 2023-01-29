@@ -41,13 +41,19 @@
   </div>
 </div>
 
-<div class="">
+<div class="componentDiv">
   <h2>My Collection</h2>
   <app-book-collection class="book-collection" [books]="bookCollection$ | async" (remove)="onRemove($event)"></app-book-collection>
 </div>
 
 <div>
-  <app-my-counter></app-my-counter>
-  <app-my-counter></app-my-counter>
-  <app-my-counter></app-my-counter>
+  <div class="componentDiv">
+    <app-my-counter></app-my-counter>
+  </div>
+  <div class="componentDiv">
+    <app-my-counter></app-my-counter>
+  </div>
+  <div class="componentDiv">
+    <app-my-counter></app-my-counter>
+  </div>
 </div>
