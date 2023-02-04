@@ -1,6 +1,6 @@
-<div class="book-item" *ngFor="let book of books">
+<div class="book-item" *ngFor="let book of books; let i = index" [attr.data-index]="i">
 
-  <p>{{book.volumeInfo.title}}</p> <span> by {{book.volumeInfo.authors}}</span>
+  <p>{{i}}- {{book.volumeInfo.title}}</p> <span> by {{book.volumeInfo.authors}} ({{book.volumeInfo.averageRating}})</span>
   <button (click)="add.emit(book.id)">Add to Collection</button>
 
 </div>
