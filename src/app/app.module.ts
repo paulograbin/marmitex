@@ -10,11 +10,12 @@ import {LogUpdateComponent} from "./log-update/log-update.component";
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from "./counter.reducer";
 import { MyCounterComponent } from "./my-counter/my-counter.component";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {booksReducer} from "./state/books.reducer";
 import {collectionReducer} from "./state/collection.reducer";
 import {BookListComponent} from "./book-list/book-list.component";
 import {BookCollectionComponent} from "./book-collection/book-collection.component";
+import {HttpInterceptorService} from "./http-interceptor.service";
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import {BookCollectionComponent} from "./book-collection/book-collection.compone
     }),
     StoreModule.forRoot({count: counterReducer, books: booksReducer, collection: collectionReducer})
   ],
-  providers: [UntypedFormBuilder, LogUpdateComponent],
+  providers: [UntypedFormBuilder, LogUpdateComponent, {provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
